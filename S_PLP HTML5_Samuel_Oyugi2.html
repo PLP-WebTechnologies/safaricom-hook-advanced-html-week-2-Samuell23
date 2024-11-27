@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia & Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        section {
+            margin: 2rem;
+            padding: 1rem;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+
+        form label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Having A taste!?😂😂</h1>
+    <p>Enjoy the media and share your feedback!(😶😶🔇🔇)</p>
+</header>
+
+<!-- Multimedia Section -->
+<section id="multimedia">
+    <h2>Enjoy Our Multimedia Content</h2>
+
+    <!-- Audio -->
+    <div>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="audio-file.mp3" type="audio/mpeg">
+            <source src="audio-file.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Video -->
+    <div>
+        <h3>Video</h3>
+        <video controls poster="poster-image.jpg" width="640" height="360">
+            <source src="video-file.mp4" type="video/mp4">
+            <source src="video-file.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<!-- Feedback Section -->
+<section id="feedback">
+    <h2>We Value Your Feedback</h2>
+    <p>Sometimes silence also communicates🤣🤣, please fill out this form to let us know what you think!</p>
+
+    <form action="submit-feedback" method="post">
+        <!-- Full Name -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required maxlength="50">
+
+        <!-- Email Address -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Feedback Text -->
+        <label for="feedback-text">Your Feedback:</label>
+        <textarea id="feedback-text" name="feedback-text" placeholder="Write your feedback here..." rows="5" required></textarea>
+
+        <!-- Rating -->
+        <label>Rate Your Experience:</label>
+        <input type="radio" id="excellent" name="rating" value="Excellent" required>
+        <label for="excellent">Excellent</label>
+
+        <input type="radio" id="good" name="rating" value="Good">
+        <label for="good">Good</label>
+
+        <input type="radio" id="average" name="rating" value="Average">
+        <label for="average">Average</label>
+
+        <input type="radio" id="poor" name="rating" value="Poor">
+        <label for="poor">Poor</label>
+
+        <!-- Terms and Conditions -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">No backend to collect your data😊😊. Bear by ticking🤣🤣</label>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Feedback</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Multimedia Assignment. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
